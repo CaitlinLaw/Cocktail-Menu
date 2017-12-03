@@ -1,0 +1,12 @@
+.jumbotron{
+	background-image: url("pinkcocktail.jpg")
+}
+
+h1{color:deeppink;
+font-weight: 900;
+font-stretch: ultra-condensed;
+font-family: "Brush Script MT", cursive;
+font-size: 90px;
+}
+
+body{background-color: wheat;}
