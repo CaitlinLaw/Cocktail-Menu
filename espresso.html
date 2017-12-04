@@ -1,13 +1,25 @@
 <!doctype html>
 
 <head>
-	<title>Long Island Iced Tea</title>
+	<title>Espresso Martini</title>
 	<link rel="stylesheet" href="stylesheet.css">
-	<style type="text/css">a {text-decoration:none}</style>
+	<script scr="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		$(function() {
+			$("#visible").click(function() {
+				$("#invisible").toggleClass("show");
+			});
+		});
+</script>
+	<style type="text/css">a {text-decoration:none};
+	.hide{display:none;}
+	.show{display:block;}
+</style>
+	
+
 </head>
 
 <body>
-
 		<nav>
 		<div class="brand">
 			<a href="cocktail-index.html"><h1>Bri and Cait's Cocktails</h1></a>
@@ -46,14 +58,17 @@
 
 
 	</nav>
-<section class="sec7"></section>
+<section class="sec15"></section>
 <section class="sec2">
-	<h2>Long Island Iced Tea</h2>
+	<h2>Espresso Martini</h2>
 <p>Hello! wirrhg;irdojagrpejiogje </p>
 <h2>Ingredients</h2>
 <p>simply cick iirhgerpihgperhg</p>
 
 </section>
+
+<p id="visible">Show Method</p>
+<p id="invisible" class="hide">this is where we would write the method</p>
 
 </body>
 </html>

@@ -1,13 +1,35 @@
 <!doctype html>
 
 <head>
-	<title>Long Island Iced Tea</title>
+	<title>Bloody Mary</title>
 	<link rel="stylesheet" href="stylesheet.css">
-	<style type="text/css">a {text-decoration:none}</style>
+	<style type="text/css">a {text-decoration:none};</style>
+	<script src="js/jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			var readMoreHtml = $(".show-method").html();
+			var lessText = readMoreHtml.substr(0, 100);
+
+			if(readMoreHtml.length> 100){
+				$(".show-method").html(lessText).append("<a href='' class='show-method-link'> Show Method</a>");
+			}else {
+				$(".show-method").html(readMorehtml);
+
+			}
+			$("body").on("click", "show-method-link", function(){
+				$(this).parent("show-method").html(readMoreHtml).append("<a href=''class='hide-method-link'> Show Method</a>")
+
+	});
+
+			$("body").on("click", "hide-method-link", function(){
+				$(this).parent("show-method").html(readMoreHtml).append("<a href=''class='show-method-method-link'>Hide Method </a>")
+			});
+
+	});
+	</script>
 </head>
 
 <body>
-
 		<nav>
 		<div class="brand">
 			<a href="cocktail-index.html"><h1>Bri and Cait's Cocktails</h1></a>
@@ -46,14 +68,20 @@
 
 
 	</nav>
-<section class="sec7"></section>
+<section class="sec14"></section>
 <section class="sec2">
-	<h2>Long Island Iced Tea</h2>
+	<h2>Bloody Mary</h2>
 <p>Hello! wirrhg;irdojagrpejiogje </p>
 <h2>Ingredients</h2>
 <p>simply cick iirhgerpihgperhg</p>
 
 </section>
+
+<div class="method">
+	<div class="show-method">
+	<p>this would be where we write the recipe</p>
+</div>
+</div>
 
 </body>
 </html>
