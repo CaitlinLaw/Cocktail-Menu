@@ -4,29 +4,7 @@
 	<title>Bloody Mary</title>
 	<link rel="stylesheet" href="stylesheet.css">
 	<style type="text/css">a {text-decoration:none};</style>
-	<script src="js/jquery.js"></script>
-	<script>
-		$(document).ready(function(){
-			var readMoreHtml = $(".show-method").html();
-			var lessText = readMoreHtml.substr(0, 100);
-
-			if(readMoreHtml.length> 100){
-				$(".show-method").html(lessText).append("<a href='' class='show-method-link'> Show Method</a>");
-			}else {
-				$(".show-method").html(readMorehtml);
-
-			}
-			$("body").on("click", "show-method-link", function(){
-				$(this).parent("show-method").html(readMoreHtml).append("<a href=''class='hide-method-link'> Show Method</a>")
-
-	});
-
-			$("body").on("click", "hide-method-link", function(){
-				$(this).parent("show-method").html(readMoreHtml).append("<a href=''class='show-method-method-link'>Hide Method </a>")
-			});
-
-	});
-	</script>
+	<script type="text/javascript" src="javacocktail.js"></script>
 </head>
 
 <body>
@@ -77,11 +55,10 @@
 
 </section>
 
-<div class="method">
-	<div class="show-method">
-	<p>this would be where we write the recipe</p>
+<div style="position: fixed; right: 0%;: 10px; top: 40px;"> 
+		<input type="image" src="https://www.vertical-leap.uk/wp-content/uploads/2016/05/fact-375x215.png" name="tip_button" onclick="top_tip2();">
 </div>
-</div>
+
 
 </body>
 </html>

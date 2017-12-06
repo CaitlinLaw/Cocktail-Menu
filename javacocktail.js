@@ -1,23 +1,27 @@
-alert("welcome to cocktails!")
+//this is a recipe for a maitai 
+/*
+yo
+dude
 
 
-$('#show').click(function()
-{
-$('#show').css('display','none');
-$("#data").show();
-$("#hide").show();
-});
 
-$(document).ready(function() {
-$('#show').hide();
-function show_image(){
-	$(".Romulus-Image").show();
+sup
+*/
+
+function top_tip(){
+
+		alert("This cocktail is Bri's favourite!") + '.\n';
 }
-$(".Romulus").click(show_image);
+	
+function top_tip2(){
 
-$("#show").click(show_method);
+		alert("FACT: Looks like someone is hungover!") + '.\n';
+}
+
+/*$(document).ready(function() {
+$('#show').hide();
 function show_method(){
 	$("#data").show();
-}
+}*/
 
-});
+//});
