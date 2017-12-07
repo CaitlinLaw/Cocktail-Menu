@@ -1,0 +1,1 @@
+alert("Warning! This cocktail is very strong, please drink responsibly.")
